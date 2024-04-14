@@ -1,0 +1,131 @@
+/*----------Variables----------*/
+:root {
+  /*fuente*/
+  --fuenteHeading: ;
+  --fuenteParrafo: ;
+  /*color*/
+  --blanco: #ffffff;
+  --gris: #888888;
+  --negro: #000000;
+  --primario: ;
+  --primarioOSCURO: ;
+  --secundario: ;
+  --secundarioOSCURO: ;
+}
+
+/*----------Configuraciones globales----------*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*ahora 1rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background-color: var(--negro);
+  color: var(--primario);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color:#ffffff;
+
+
+}
+
+.conteiner{
+display:grid;
+height: 100vh;
+gap: 10px;
+grid-template-columns: 1fr;
+grid-template-rows: 10% auto 10%;
+}
+
+header {
+background-color:#c8c8c8;
+display: grid;
+grid-template-columns: 1fr 4fr 1fr ;
+}
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #888888;
+}
+
+ a{
+  text-decoration:none;
+  color:#ffffff;
+}
+li {
+  list-style:none;
+}
+
+.carrito{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+main{
+  display: grid;
+  grid-template-rows: 2fr 20fr;
+}
+
+.buscador{
+background-color:#ffffff;
+text-align: center;
+}
+
+.banner{
+background-color:#646464;
+
+}
+.destacados{
+  font-size: x-large;
+  text-align: center;
+  display:grid;
+  grid-auto-rows: 1fr 1fr;
+}
+.productos{
+  color:#ffffff;
+  background-color:#646464;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.new{
+  text-align: center;
+  display:grid;
+  grid-auto-rows: 1fr 1fr;
+  font-size: x-large;
+ }
+.nuevo{
+  color:#ffffff;
+  background-color:#646464;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+}
+.izquierda{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: small;
+}
+.derecha{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  font-size: small;
+}
